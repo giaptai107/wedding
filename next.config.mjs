@@ -1,8 +1,14 @@
 /** @type {import('next').NextConfig} */
+const githubBasePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const nextConfig = {
-  output: 'export',
-  basePath: '/wedding',
-  assetPrefix: '/wedding/',
+  output: "export",
+
+  basePath: githubBasePath,
+
+  assetPrefix: githubBasePath,
+
+  trailingSlash: true,
+
   images: {
     unoptimized: true,
   },

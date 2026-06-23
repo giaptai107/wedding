@@ -5,9 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node -e \"require('fs').writeFileSync('out/.nojekyll', '')\"",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d out"
+    "preview": "npm run build && npx serve out",
+    "deploy": "set \"NEXT_PUBLIC_BASE_PATH=/wedding\" && npm run build && gh-pages -d out"
   },
   "dependencies": {
     "classnames": "^2.5.1",

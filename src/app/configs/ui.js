@@ -302,13 +302,13 @@ const albums = [...albumA, ...albumB, ...albumC]; // for preview
 
 const metaData = {
   main: {
-    title: "Báo Hỉ Hùng - Thúy | Kính Mời",
+    title: "Wedding GT - QT | Kính Mời",
     graphImage:
       "https://res.cloudinary.com/do6sozxbo/image/upload/v1730558395/wedding5/land.jpg",
   },
 
   wish: {
-    title: "Tất cả lời chúc dành cho Hùng - Thúy",
+    title: "Tất cả lời chúc dành cho Tài - Trâm",
     graphImage:
       "https://res.cloudinary.com/do6sozxbo/image/upload/v1730558395/wedding5/am11.jpg",
   },
@@ -319,7 +319,7 @@ const metaData = {
       "https://res.cloudinary.com/do6sozxbo/image/upload/v1730394150/wedding5_1/a3.jpg",
   },
   album: {
-    title: "Album của Hùng - Thúy`",
+    title: "Album của Tài - Trâm",
     graphImage:
       "https://res.cloudinary.com/do6sozxbo/image/upload/v1730558395/wedding5/final3.jpg",
   },
