@@ -24,6 +24,7 @@ function Intro({ handleOpen, name = "You" }) {
           <div className={cx("right")}>
             <div className={cx("text-box")}>
               <p className={cx("date")}>{weddingInfo[0].time.full}</p>
+              <p className={cx("date")}>{weddingInfo[0].time.full2}</p>
               <div className={cx("name-box")}>
                 <h3 className={cx("name")} style={{ marginTop: "-40px" }}>
                   {introSection.brideFirstLetter}

@@ -11,6 +11,7 @@ const cx = classNames.bind(styles);
 function Infomation({
   className,
   img = "",
+  title = "",
   time = "",
   address = "",
   street = "",
@@ -23,6 +24,16 @@ function Infomation({
       <House className={cx("house")} />
 
       <p className={cx("date")}>
+        <span
+          className={cx("date-detail")}
+          style={{
+            transform: boxInView ? "none" : "translateY(150px)",
+            opacity: boxInView ? 1 : 0,
+            transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          }}
+        >
+          {title}
+        </span>
         <span
           className={cx("date-detail")}
           style={{

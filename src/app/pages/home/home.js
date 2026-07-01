@@ -20,7 +20,7 @@ import Timer from "@/app/component/timer";
 const cx = classNames.bind(styles);
 export default function Home() {
   const searchParams = useSearchParams();
-  const name = searchParams.get("name") || "You";
+  const name = searchParams.get("name") || "Bạn";
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -54,10 +54,7 @@ export default function Home() {
         <>
           <Profile />
           <PaperText>
-            “Tình cảm ấy, chẳng cần cứ phải hét to lên cho cả thế giới biết, chỉ
-            cần thủ thỉ cho một người là cả thế giới của mình nghe là đủ rồi.
-            Điều quan trọng nhất là đến cuối đường vẫn còn ở bên nhau, đi cạnh
-            nhau, nắm tay nhau, rung động vì nhau. Cứ thế thôi là đủ rồi!”
+            “Chúng ta chọn nhau không phải vì cuộc sống luôn dễ dàng, mà vì biết rằng dù khó khăn hay bình yên, vẫn luôn có một người cùng mình bước tiếp.”
           </PaperText>
           <Invitation />
           <Album name={name}></Album>

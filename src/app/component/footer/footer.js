@@ -5,7 +5,7 @@ const cx = classNames.bind(styles);
 function Footer() {
   return (
     <div className={cx("wrapper")}>
-      <p className={cx("text")}>
+      {/* <p className={cx("text")}>
         Created by{" "}
         <a
           className={cx("link")}
@@ -14,7 +14,7 @@ function Footer() {
         >
           Danh Tuấn
         </a>
-      </p>
+      </p> */}
       <p className={cx("text2")}>Thank you for watching . I Hope You Like It</p>
     </div>
   );

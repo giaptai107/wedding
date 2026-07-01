@@ -10,7 +10,8 @@ import { useInView } from "framer-motion";
 const cx = classNames.bind(styles);
 
 function Invitation() {
-  const wedInfo = weddingInfo[0];
+  const wedInfo2 = weddingInfo[0];
+  const wedInfo = weddingInfo[1];
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -43,7 +44,7 @@ function Invitation() {
           <img className={cx("img")} src={invitationSection[2]} />
         </div>
       </div>
-      <Days title="Tháng 12" activeDay={invitationSection.activeDay} />
+      <Days title="Tháng 7" activeDay={invitationSection.activeDay} activeDay2={invitationSection.activeDay2} />
       <Infomation
         img={wedInfo.img}
         title={wedInfo.title}
@@ -53,6 +54,16 @@ function Invitation() {
         street={wedInfo.street}
         phone={wedInfo.phone}
         posision={wedInfo.posision}
+      />
+      <Infomation
+        img={wedInfo2.img}
+        title={wedInfo2.title}
+        date={wedInfo2.date}
+        time={wedInfo2.time}
+        address={wedInfo2.address}
+        street={wedInfo2.street}
+        phone={wedInfo2.phone}
+        posision={wedInfo2.posision}
       />
     </div>
   );
